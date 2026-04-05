@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Advanced API - Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-white font-sans">
+
+    <div class="flex h-screen">
+        <aside class="w-64 bg-slate-800 p-6 border-r border-slate-700 hidden md:block">
+            <h2 class="text-2xl font-bold text-blue-400 mb-8 tracking-tighter">GPS <span class="text-white">ADV</span></h2>
+            <nav class="space-y-4">
+                <a href="#" class="flex items-center space-x-3 text-blue-400 bg-slate-700 p-3 rounded-lg"><i class="fas fa-chart-line"></i> <span>Métricas</span></a>
+                <a href="#" class="flex items-center space-x-3 text-slate-300 hover:text-white p-3"><i class="fas fa-key"></i> <span>Chaves API</span></a>
+                <a href="#" class="flex items-center space-x-3 text-slate-300 hover:text-white p-3"><i class="fas fa-book"></i> <span>Documentação</span></a>
+                <a href="#" class="flex items-center space-x-3 text-slate-300 hover:text-white p-3"><i class="fas fa-cog"></i> <span>Configurações</span></a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 overflow-y-auto p-8">
+            <header class="flex justify-between items-center mb-8">
+                <div>
+                    <h1 class="text-3xl font-bold">Painel de Controle</h1>
+                    <p class="text-slate-400">Bem-vindo, Desenvolvedor #01</p>
+                </div>
+                <div class="bg-green-500/20 text-green-400 px-4 py-2 rounded-full border border-green-500/50 flex items-center">
+                    <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span> Sistema Online
+                </div>
+            </header>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <p class="text-slate-400 text-sm mb-2">Requisições (24h)</p>
+                    <h3 class="text-3xl font-mono">1.248.502</h3>
+                    <div class="text-green-400 text-sm mt-2"><i class="fas fa-arrow-up"></i> 12% vs ontem</div>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <p class="text-slate-400 text-sm mb-2">Latência Média</p>
+                    <h3 class="text-3xl font-mono text-blue-400">42ms</h3>
+                    <div class="text-slate-400 text-sm mt-2">Data Center: São Paulo</div>
+                </div>
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <p class="text-slate-400 text-sm mb-2">Dispositivos Conectados</p>
+                    <h3 class="text-3xl font-mono">5.291</h3>
+                    <div class="text-slate-400 text-sm mt-2">Ativos agora</div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h2 class="text-xl font-semibold mb-4">Minhas Chaves de API</h2>
+                    <div class="space-y-4">
+                        <div class="bg-slate-900 p-4 rounded-lg flex justify-between items-center border border-slate-700">
+                            <div>
+                                <p class="text-xs text-slate-500 uppercase font-bold">Produção - App Principal</p>
+                                <code class="text-blue-300">gps_live_4k82m_99xP2...</code>
+                            </div>
+                            <button class="text-slate-400 hover:text-white"><i class="far fa-copy"></i></button>
+                        </div>
+                        <button class="w-full py-3 bg-blue-600 hover:bg-blue-500 rounded-lg font-bold transition">Criar Nova Chave</button>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                    <h2 class="text-xl font-semibold mb-4">Monitoramento em Tempo Real</h2>
+                    <div class="bg-slate-900 h-48 rounded-lg flex items-center justify-center text-slate-500 border border-slate-700 italic">
+                        [ Mapa de Calor: Visualização de coordenadas ativa ]
+                    </div>
+                    <div class="mt-4 text-sm text-slate-400">
+                        <p><i class="fas fa-info-circle mr-2 text-blue-400"></i> Última requisição de: <strong>User_881</strong> (Lat: -23.55, Lng: -46.63)</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>
